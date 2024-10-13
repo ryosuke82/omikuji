@@ -27,7 +27,29 @@
     <hr>
     <div id="ouen" style="font-size:50px">
     </div>
-    <script src="mission4-04_1.js"></script>
+    <script>
+function omikujishow(){
+	var omikuji = new Array("大吉","中吉","小吉","末吉","凶","大凶");
+
+	    var number1=Math.random()
+	    var number2=number1*6;
+	    var number=Math.floor(number2);
+	    var message1=omikuji[number];
+        
+        var object=document.getElementById("omikuji")
+	    object.innerText=message1;
+    
+    var lukkycolor = new Array("赤","青","黄","緑","白","黒")
+
+        var number3=Math.random()
+        var number4=number3*6;
+        var numberc=Math.floor(number4);
+        var message2=lukkycolor[numberc];
+
+        var object=document.getElementById("lukkycolor")
+	    object.innerText=message2;
+}
+    </script>
   </body>
 </center>
 
